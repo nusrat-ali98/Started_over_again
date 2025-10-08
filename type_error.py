@@ -9,7 +9,16 @@ def add_number(num1, num2):
     else:
         print(num1 + num2)
 
+print("Please enter two numbers")
+print("if you want to quit program press 'Enter'")
 
-number1= input("enter a number: ")
-number2 = input("enter a second number: ")
-add_number(number1, number2)
+
+while True:
+    number1= input("enter a number: ")
+    if number1 == "":
+        break
+    number2 = input("enter a second number: ")
+    if number2 == "":
+       break
+
+    add_number(number1, number2)
